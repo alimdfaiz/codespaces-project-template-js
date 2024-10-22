@@ -33,11 +33,8 @@ const Footer = (props) => {
     gitHub,
     instagram,
     linkedIn,
-    medium,
     name,
     primaryColor,
-    twitter,
-    youTube,
   } = props;
 
   return (
@@ -60,21 +57,38 @@ const Footer = (props) => {
           gap: "2.5rem",
         }}
       >
-        {email && (
+        {/* {email && (
           <a href={`mailto:${email}`}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
           </a>
-        )}
+        )} */}
+
+
+<a  href="alimdfaiz6@gmail.com" target="_blank" >
+<img src={envelopeIcon} alt="email" className="socialIcon" />
+                </a>
+
+
+
         {devDotTo && (
           <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
             <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
           </a>
         )}
-        {gitHub && (
+        {/* {gitHub && (
           <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
-        )}
+        )} */}
+
+
+<a  href="https://github.com/alimdfaiz" target="_blank" >
+<img src={gitHubIcon} alt="GitHub" className="socialIcon" />
+                </a>
+
+
+
+
         {instagram && (
           <a
             href={`https://www.instagram.com/${instagram}`}
@@ -84,16 +98,28 @@ const Footer = (props) => {
             <img src={instagramIcon} alt="Instagram" className="socialIcon" />
           </a>
         )}
-        {linkedIn && (
+
+
+        {/* {linkedIn && (
           <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
+            href={`https://www.linkedin.com/in/md-faiz-ali-42750a172/${linkedIn}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </a>
-        )}
-        {medium && (
+        )} */}
+
+
+<a href="https://www.linkedin.com/in/md-faiz-ali-42750a172/" target="_blank" >
+<img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
+                </a>
+
+
+
+
+
+        {/* {medium && (
           <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
             <img src={mediumIcon} alt="Medium" className="socialIcon" />
           </a>
@@ -111,9 +137,12 @@ const Footer = (props) => {
           >
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
-        )}
+        )} */}
+
+
+
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
+      <p className="small" style={{ marginTop: 0, color: "white", fontWeight:"bold" }}>
         Created by {name}
       </p>
     </div>

@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import img3 from "../images/comp.avif";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "laptop with workable environment";
 
 /**
  * Project list
@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Weather App",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "I have developed real time weather app which allows the user to check weather of any city, search for city & you will get detailed weather report in a sleek & user-friendly interface.",
+    url: "https://alimdfaiz.github.io/weather-clone/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Blinkit-clone ",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Developed a high-performance and responsive grocery ordering app, which is a cloned version of the Blinkit grocery shopping app with added features and showcasing proficiency",
+    url: "https://alimdfaiz.github.io/blinkit-clone/",
   },
   {
-    title: "My Resume Site",
+    title: "My Portfolio Site",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Created By ReactJs and deployed to GitHub pages. Includes my experience and design abilities.",
+    url: "https://alimdfaiz.github.io/portfolio-faiz/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Restaurant Landing Page",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Landing Page for a Restaurant, using HTML, CSS, and basic JavaScript.",
+    url: "https://alimdfaiz.github.io/Task1/",
   },
 ];
 
@@ -63,8 +63,8 @@ const Portfolio = () => {
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            src={img3}
+            style={{ height: "90%", width: "100%", objectFit: "cover", marginLeft:"70px" }}
             alt={imageAltText}
           />
         </div>
