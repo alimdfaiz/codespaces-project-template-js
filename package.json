@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-
   "scripts": {
     "start": "parcel",
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
+  "deploy": "gh-pages -d build",
+    "predeploy": "npm run build-gh",
+    "deploy": "gh-pages -d dist",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
-    "predeploy": "npm run build-gh"
+    "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'"
   },
   "repository": {
     "type": "git",
